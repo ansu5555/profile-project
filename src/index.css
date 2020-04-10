@@ -1,13 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 1px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 500 !important;
+    background-color: #63a4ff !important;
+    background-image: linear-gradient(to right, #63a4ff, #003378);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.custom-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    width: 80%;
+    box-shadow: 2px 2px 20px #212121;
+}
+
+.left-section {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    background-image: url('./images/IMG_3544.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-section {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    margin-bottom: 0vh !important;
+}
+
+.left-overlay {
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: #212121d5;
+}
+
+.name {
+    height: auto;
+}
+
+.picture {
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('./images/IMG_7597.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.picture-dimention {
+    height: 170px;
+    width: 170px;
+}
+
+.about {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 200;
+}
+
+.contact-color {
+    color: #6effff;
+}
+
+.contact-icon {
+    line-height: 1 !important;
+    font-size: 1.2rem !important;
+    font-weight: 300 !important;
+}
+
+.contact-text {
+    line-height: 1;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.follow {
+    height: 64px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 200;
+}
+
+.social-icon {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 48px;
+    width: 48px;
+    background-color: transparent;
+}
+
+.section {
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.section-heading {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+}
+
+.section-text {
+    line-height: 1.2rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+}
+
+.theme-light {
+    color: #212121;
+    background-color: #fcf9f0;
+}
+
+.theme-dark {
+    color: #fcf9f0;
+    background-color: #212121;
+}
+
+.theme-switch {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .picture-dimention {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .picture-dimention {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .custom-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-height: 580px) {
+    .contact-text {
+        font-size: 0.88rem;
+        /* font-weight: 400; */
+    }
+
+    .section-heading {
+        line-height: 1.3rem;
+        font-size: 1.2rem;
+        /* font-weight: 600; */
+        margin-bottom: 10px !important;
+    }
+
+    .section-text {
+        line-height: 1.2rem !important;
+        font-size: 0.88rem !important;
+        /* font-weight: 500 !important; */
+    }
+}
+
+@media only screen and (min-height: 650px) {
+    .custom-container {
+        height: 95%;
+    }
+
+    .right-section {
+        margin-bottom: 10vh !important;
+    }
+}
+
+@media only screen and (min-height: 750px) {
+    .custom-container {
+        height: 80%;
+    }
+}
+
+@media only screen and (min-height: 850px) {
+    .custom-container {
+        height: 65%;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    .custom-container {
+        height: 50%;
+    }
 }
