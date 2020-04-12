@@ -7,7 +7,6 @@ import stackoverflowLogo from './logos/so-icon.png'
 import TwitterLogo from './logos/tw-icon.png'
 import LinkedInLogo from './logos/li-icon.png'
 import InstragramLogo from './logos/ig-icon.png'
-import Resume from './docs/Ansuman_Ghosh_Resume.pdf'
 
 function App() {
     const [theme, setTheme] = useState(true)
@@ -127,7 +126,7 @@ function App() {
                         <blockquote className="blockquote section-text">
                             <p className="mx-3 pb-2 border-bottom">
                                 <a
-                                    href={Resume}
+                                    href="https://drive.google.com/file/d/1nu3HpuUiJPTFsZsMkMYvK7dEa4iOFUkB/view?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

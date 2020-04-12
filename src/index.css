@@ -177,20 +177,17 @@ body {
 @media only screen and (max-height: 580px) {
     .contact-text {
         font-size: 0.88rem;
-        /* font-weight: 400; */
     }
 
     .section-heading {
         line-height: 1.3rem;
         font-size: 1.2rem;
-        /* font-weight: 600; */
         margin-bottom: 10px !important;
     }
 
     .section-text {
         line-height: 1.2rem !important;
         font-size: 0.88rem !important;
-        /* font-weight: 500 !important; */
     }
 }
 
