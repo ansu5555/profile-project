@@ -1,6 +1,6 @@
 {
     "name": "profile-project",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "bootstrap": "^4.4.1",
@@ -16,6 +16,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --verbose --watchAll=false",
+        "lint": "eslint src --ext js,jsx --fix",
         "gae-deploy": "serve -s build -l 8080"
     },
     "eslintConfig": {
@@ -35,6 +36,16 @@
     },
     "devDependencies": {
         "enzyme": "^3.11.0",
-        "enzyme-adapter-react-16": "^1.15.2"
+        "enzyme-adapter-react-16": "^1.15.2",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-prettier": "^3.1.3",
+        "husky": "^4.2.5",
+        "prettier": "^2.0.4"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint && git add -A",
+            "pre-push": "npm run lint && npm test"
+        }
     }
 }
