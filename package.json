@@ -17,7 +17,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test --verbose --watchAll=false",
         "lint": "eslint src --ext js,jsx --fix",
-        "gae-deploy": "serve -s build -l 8080"
+        "gae-deploy": "serve -s build --listen=$PORT"
     },
     "eslintConfig": {
         "extends": "react-app"
