@@ -122,15 +122,12 @@ function App() {
                             </a>
                         </div>
                         <div className='col m-0 p-0'>
-                            <a
-                                href='https://www.linkedin.com/in/ansuman-ghosh/'
-                                target='_blank'
-                                rel='noopener noreferrer'>
+                            <a href='https://www.linkedin.com/in/ansu5555/' target='_blank' rel='noopener noreferrer'>
                                 <img src={LinkedInLogo} alt='Linkedin' className='social-icon' />
                             </a>
                         </div>
                         <div className='col m-0 p-0'>
-                            <a href='https://www.instagram.com/ansumanghosh/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.instagram.com/ansu5555/' target='_blank' rel='noopener noreferrer'>
                                 <img src={InstragramLogo} alt='Instragram' className='social-icon' />
                             </a>
                         </div>

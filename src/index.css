@@ -174,7 +174,7 @@ body {
     }
 }
 
-@media only screen and (max-height: 580px) {
+@media only screen and (max-height: 600px) {
     .contact-text {
         font-size: 0.88rem;
     }
